@@ -1,0 +1,121 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}All Ticket List{% endblock %}
+{% block body %}
+
+<div class="w-100 relative">
+        <div class="w-100 mx-auto xl:flex md:flex px-2 ">
+            <div class="w-20 xl:mx-2 pt-4 xs:hidden">
+                <div class="sticky h-px-450 bor-rig px-4 mt-5">
+                   <h1 class="text-grey-darkest text-2xl">Categories</h1>
+
+                <ul class="list block text-grey-darkest pt-1 pl-2 pt-4">
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_concert' %}">Concert</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_festival' %}">Festival</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_cinema' %}">Cinema</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_sport' %}">Sport</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_expo' %}">Expo</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_meeting' %}">Meeting</a></li>
+                        <li class="my-2"><a class="text-grey-darkest" href="{% url 'tickets:category_others' %}">Others</a></li>
+                </ul>
+                </div>
+            </div>
+            <div class="w-90 xs:w-100 xl:mx-4 pt-3">
+                <div class="flex w-100 xs:hidden">
+                    <div class="w-20">
+                        <span class="pl-2 text-xl">All Tickets: </span>
+                    </div>
+                    <div class="w-80 text-center bg-white-smoke rounded-b-xxl shadow-sm -mt-4 py-2">
+                        <form method="get" class="">
+                            <div class="flex w-100">
+                                <div class="md:hidden w-20"></div>
+                                <div class="w-20 md:w-30 text-left mx-3">
+                                <span class="text-sm">Minimum Price:</span>
+                                <input class="form-input rounded" type="number" name="min_price" placeholder="ex : 0">
+                                </div>
+                                <div class="w-10 text-center mt-4 pt-1">
+                                    <p>Up To</p>
+                                </div>
+                                <div class="w-20 md:w-30 text-left mx-3">
+                                    <span class="text-sm">Maximum Price:</span>
+                                    <input class="form-input rounded" type="number" name="max_price" placeholder="ex : 5000">
+                                </div>
+                                <div class="w-20 pt-4 r-0">
+                                    <button class="btn w-90 rounded-full -ml-5 bg-orange text-white py-1">
+                                        Search
+                                    </button>
+                                </div>
+                                <div class="w-10">
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+                <div class="py-1 xl:grid-3 md:grid-2 grid pt-4 bg-white md:pl-2" style="grid-template-columns: repeat(1, 1fr);">
+
+                {% if queryset %}
+                    {% for ticket in queryset %}
+                    <div class="xl:mx-2 xs:w-100 md:mx-1 my-2 bg-white-smoke px-2 py-2 hover:shadow-lg border rounded relative">
+                        <a href="{%  url 'tickets:ticket_detail' ticket.pk%}">
+                            <div class="xl:hidden md:hidden" style="height: 150px">
+                            <img class="clip-full" src="{{ ticket.ticket_banner.url}}">
+                            </div>
+                            <div class="xs:hidden md:hidden" style="height: 250px">
+                            <img class="clip-full" src="{{ ticket.ticket_banner.url}}">
+                            </div>
+                            <div class="xs:hidden xl:hidden" style="height: 150px">
+                            <img class="clip-full" src="{{ ticket.ticket_banner.url}}">
+                            </div>
+                        </a>
+                        <div class="py-2 flex relative bg-white-smoke text-black">
+                            <div class="w-20 my-auto">
+                                <div class="w-100 pt-1 border-solid border-1 border-black text-center pb-1">
+                                    <span class="text-sm">{{ ticket.starting_date }}</span>
+                                </div>
+                            </div>
+                            <div class="w-80 mx-2 text-black">
+                                <span class="text-sm font-semibold"><a class="text-black" href="{%  url 'tickets:ticket_detail' ticket.pk%}">{{ ticket.snippet}} </a></span>
+                                <p class="line-height-small text-sm pt-1">{{ ticket.starting_hour }} Up To {{ ticket.ending_hour }}</p>
+                            </div>
+                            <a class="btn absolute btn-sm r-0 b-0 bg-orange text-white" href="{%  url 'tickets:ticket_detail' ticket.pk%}"><i class="fas fa-shopping-basket"></i> Buy</a>
+                        </div>
+
+                    </div>
+                    {% endfor %}
+                {% else %}
+                    <h1 class="text-2xl">Sorry! No tickets Available</h1>
+                {% endif %}
+
+
+                </div>
+            <div class="w-50 float-right text-centered mt-5">
+                        {% if queryset.has_other_pages %}
+                          <ul class="pagination">
+                            {% if queryset.has_previous %}
+                              <li><a href="?page={{ queryset.previous_page_number }}">&laquo;</a></li>
+                            {% else %}
+                              <li class="disabled"><span>&laquo;</span></li>
+                            {% endif %}
+                            {% for i in queryset.paginator.page_range %}
+                              {% if users.number == i %}
+                                <li class="active"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                              {% else %}
+                                <li><a href="?page={{ i }}">{{ i }}</a></li>
+                              {% endif %}
+                            {% endfor %}
+                            {% if queryset.has_next %}
+                              <li><a href="?page={{ queryset.next_page_number }}">&raquo;</a></li>
+                            {% else %}
+                              <li class="disabled"><span>&raquo;</span></li>
+                            {% endif %}
+                          </ul>
+                        {% endif %}
+    </div>
+            </div>
+        </div>
+</div>
+{% endblock %}

@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agatike | Launching Soon!</title>
+    <meta name="google-site-verification" content="-zbViFN7kFzDf0UEpHbGCrGD8J8dHVVtRUC3nQA4BXA" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'tickets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'tickets/css/desktop.css' %}">
+    <link rel="stylesheet" href="{% static 'tickets/css/mobile.css' %}">
+    <link rel="stylesheet" href="{% static 'tickets/css/tablet.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'tickets/image/favicon.png' %}" type="image/x-icon">
+    <style>
+        .img-bg{
+            height: 100vh;
+        }
+        h1{
+            font-family: 'Manjari', sans-serif;
+            font-size: 80px;
+        }
+        p{
+            font-family: 'Manjari', sans-serif;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body class="w-100 xs:w-100 overflow-x-hidden overflow-y-hidden">
+    <div class="w-100 xs:w-100 relative">
+        <img class="absolute img-bg xs:invisible" src="{% static 'tickets/image/time remaining.svg' %}">
+        <img class="absolute img-bg xl:invisible" src="{% static 'tickets/image/time remaining[mob].svg' %}">
+        <div class="w-100 flex z-99 relative py-2 xl:px-4 xs:px-2 md:px-3">
+            <div class="xl:w-30 xs:w-80 xl:pl-3 md:pl-2 pt-2">
+            <img class="w-15 xs:w-20" src="{% static 'tickets/image/logo.png' %}">
+            <span class="text-4xl xs:text-xl text-grey-darkest xl:mx-3 xs:mx-1">Agatike</span>
+            </div>
+            <div class="w-70 text-right xs:pt-1">
+                <ul class="list inline-block">
+                    <li class="text-lg xs:ml-10"><a class="text-grey-darkest xl:text-xl xs:text-sm xs:-mt-3 no-underline xs:pb-2" href="{% url 'accounts:register' %}">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="relative mt-10">
+            <div class="w-60 md:w-80 xs:w-80 mx-auto text-center">
+                <h1 class="xs:text-3xl md:text-5xl">Launching Soon</h1>
+                <div class="border border-1 pt-2 rounded-xl border-black border-solid w-35 md:w-40 xs:w-70 xs:mt-3  mx-auto xl:-mt-10">
+                    <p class="line-height-small xs:text-xl" id="demo"></p>
+                </div>
+
+{#                <div class="w-50 mt-3 mx-auto border border-solid border-b-1">#}
+{##}
+{#                </div>#}
+                <div class="pt-2">
+                    <h1 class="text-3xl  xs:text-xl">Thanks For Paying Visit To Our Web Application</h1>
+                    <p class="text-xl">Please SignUp And You will be Informed when Launched!</p>
+                    <a href="{% url 'accounts:register' %}">
+                    <button class="btn border text-grey-darkest border-1 border-orange bg-white rounded-full w-20 xs:w-50 hover:bg-orange-dark hover:text-orange">Sign Up</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class=" h-px-100">
+
+    </div>
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Sep 20, 2019 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "days " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is over, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</body>
+</html>

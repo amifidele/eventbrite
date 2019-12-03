@@ -1,0 +1,115 @@
+{% extends 'base_menu.html' %}
+{% load staticfiles %}
+{% block title %}Agatike | help{% endblock %}
+{% block body %}
+    <div class="w-90 mx-auto xl:flex md:flex py-2">
+        <div class="w-60 xs:w-100 md:w-60">
+            <img class="" src="{% static 'tickets/image/help illustaration.svg' %}">
+        </div>
+        <div class="w-40 xs:w-100 md:w-40">
+            <div class="w-100 mx-auto xs:text-center xl:mt-32 md:mt-10">
+                <h1 class="text-muted text-4xl xs:text-3xl md:text-3xl ">Agatike Help Center.</h1>
+                <p class="text-muted pt-3 text-lg">We help Buyers & event organizers bring people together with the power of live experiences.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-80 md:w-95 mx-auto">
+        <div class="text-centered xl:p-5 text-muted">
+            <h2 class="xs:text-2xl">How to buy your ticket?</h2>
+        </div>
+        <div class="w-100 text-muted">
+            <div class="xl:flex md:flex w-100 mx-auto">
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/register [icon].png' %}">
+                    </div>
+                    <div class="text-centered md:px-2">
+                        <h4 class="-mt-0 md:text-xl "> 1 . Sign up/Log in</h4>
+                        <p class="md:text-sm"> Sign up a new account or login if you are already a member in order to get access</p>
+                    </div>
+                </div>
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/choose [icon].png' %}">
+                    </div>
+                    <div class="text-centered md:px-2">
+                        <h4 class="-mt-0 md:text-xl">2 . Choose your ticket</h4>
+                        <p class="md:text-sm">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/add_to_cart [icon].png' %}">
+                    </div>
+                    <div class="text-centered md:px-2">
+                        <h4 class="-mt-0 md:text-xl">3 . Add to cart</h4>
+                        <p class="md:text-sm">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/payment [icon].png' %}">
+                    </div>
+                    <div class="text-centered md:px-2">
+                        <h4 class="-mt-0 md:text-xl">4 . Pay </h4>
+                        <p class="md:text-sm">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-centered p-5">
+{#            {% url 'tickets:list_views' %}#}
+            <a href="" class="btn rounded border-solid border-1 border-orange text-grey-darkest btn hover:bg-orange hover:text-white">Try it now </a>
+        </div>
+        <div class="text-centered pt-2 text-muted xl:p-5">
+            <h2 class="xs:text-2xl">How To Sell Your Ticket With Agatike ?</h2>
+        </div>
+        <div class="w-100 text-muted">
+            <div class="xl:flex md:flex w-100 mx-auto">
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6  xs:ml-10" src="{% static 'tickets/image/register [icon].png' %}">
+                    </div>
+                    <div class="text-centered">
+                        <h4 class="-mt-0">Sign up/Log in</h4>
+                        <p class="">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/fill form [icon].png' %}">
+                    </div>
+                    <div class="text-centered">
+                        <h4 class="-mt-0">Fill the form</h4>
+                        <p class="">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+                <div class="xl:w-25 md:w-25 xs:w-100 xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/upload [icon].png' %}">
+                    </div>
+                    <div class="text-centered">
+                        <h4 class="-mt-0">Upload your tickets</h4>
+                        <p class="">Sign up your account or login if you are already a member</p>
+                    </div>
+                </div>
+
+                <div class="xl:w-25 md:w-25 xs:w-100  xl:mx-3">
+                    <div class="w-100 py-4">
+                        <img class="w-50 ml-6 xs:ml-10" src="{% static 'tickets/image/dashboard [icon].png' %}">
+                    </div>
+                    <div class="text-centered">
+                        <h4 class="-mt-0">Control Your Tickets</h4>
+                        <p class="">Make syre you check your dashbouard regulary to see how tickets are sold out</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-centered mt-3 xs:mb-4">
+{#            {% url 'tickets:create_tickets' %}#}
+            <a href="" class="btn rounded border-solid border-1 border-orange text-grey-darkest btn hover:bg-orange hover:text-white">Try it now </a>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="596ff217-1078-4079-b3a0-dd054ff37d5d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/logout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/accounts/templates/accounts/signup.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/event_list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2232">
+              <caret line="93" column="22" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="128" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tickets/static/tickets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133584">
+              <caret line="5566" column="21" selection-start-line="5566" selection-start-column="21" selection-end-line="5566" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tickets/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="27504">
+              <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/runserver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="101" selection-start-line="101" selection-end-line="101" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/accounts/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="888">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/comming_soon.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2088">
+              <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tickets/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1944">
+              <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>bg-primary</find>
+      <find>bg-blue-dark</find>
+      <find>bg-white</find>
+      <find>h-px-</find>
+      <find>h-px-600</find>
+      <find>acc</find>
+      <find />
+      <find>border-bottom</find>
+      <find>event</find>
+      <find>bg-orange</find>
+      <find>text-black</find>
+      <find>clip</find>
+      <find>Sign Up</find>
+      <find>gri</find>
+      <find>h-px-2</find>
+      <find>bg-or</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ticket</replace>
+      <replace>text-grey</replace>
+      <replace>text-muted</replace>
+      <replace>Login</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tickets/static/tickets/image/index_bg[svg].svg" />
+        <option value="$PROJECT_DIR$/dashboard/urls.py" />
+        <option value="$PROJECT_DIR$/dashboard/templates/dashboard/plotly.html" />
+        <option value="$PROJECT_DIR$/dashboard/models.py" />
+        <option value="$PROJECT_DIR$/dashboard/admin.py" />
+        <option value="$PROJECT_DIR$/dashboard/views.py" />
+        <option value="$PROJECT_DIR$/finance/models.py" />
+        <option value="$PROJECT_DIR$/finance/templates/dashboard/plotly.html" />
+        <option value="$PROJECT_DIR$/finance/views.py" />
+        <option value="$PROJECT_DIR$/tickets/as_dash.py" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/data.html" />
+        <option value="$PROJECT_DIR$/finance/templates/finance/plotly.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/Blog.html" />
+        <option value="$PROJECT_DIR$/tickets/static/tickets/css/style.css" />
+        <option value="$PROJECT_DIR$/tickets/forms.py" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/dashboard.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/qr-code.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/profile.html" />
+        <option value="$PROJECT_DIR$/procfile" />
+        <option value="$PROJECT_DIR$/Procfile" />
+        <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/xyzshopping/views.py" />
+        <option value="$PROJECT_DIR$/xyzshopping/urls.py" />
+        <option value="$PROJECT_DIR$/accounts/forms.py" />
+        <option value="$PROJECT_DIR$/accounts/urls.py" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/help.html" />
+        <option value="$PROJECT_DIR$/tickets/serializers.py" />
+        <option value="$PROJECT_DIR$/templates/base_menu.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/tickets/urls.py" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/About.html" />
+        <option value="$PROJECT_DIR$/accounts/views.py" />
+        <option value="$PROJECT_DIR$/tickets/templatetags/cart_template_tags.py" />
+        <option value="$PROJECT_DIR$/xyzshopping/settings.py" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/order_summary.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/wallet.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/ticket_form.html" />
+        <option value="$PROJECT_DIR$/tickets/static/tickets/css/desktop.css" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/event_details.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/category_detail.html" />
+        <option value="$PROJECT_DIR$/tickets/templates/tickets/event_list.html" />
+        <option value="$PROJECT_DIR$/templates/base_layout.html" />
+        <option value="$PROJECT_DIR$/tickets/admin.py" />
+        <option value="$PROJECT_DIR$/tickets/models.py" />
+        <option value="$PROJECT_DIR$/tickets/views.py" />
+        <option value="$PROJECT_DIR$/templates/comming_soon.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/login.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/logout.html" />
+        <option value="$PROJECT_DIR$/accounts/templates/accounts/signup.html" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/accounts/models.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="616" />
+    <option name="y" value="102" />
+    <option name="width" value="697" />
+    <option name="height" value="775" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <showMembers ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="xyzshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyzshopping" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyzshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyzshopping" type="462c0819:PsiDirectoryNode" />
+              <item name="tickets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xyzshopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xyzshopping" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="xyzshopping" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="full.screen.before.presentation.mode" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/django-stock-management-system-master/django-stock-management-system-master" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ami fidele\god\xyzshopping\tickets\static\tickets\image" />
+      <recent name="C:\Users\ami fidele\god\xyzshopping\media" />
+      <recent name="C:\Users\ami fidele\god\xyzshopping" />
+      <recent name="C:\Users\ami fidele\god\xyzshopping\templates" />
+      <recent name="C:\Users\ami fidele\god\xyzshopping\tickets\templates\tickets" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ami fidele\god\xyzshopping\finance\templates\finance" />
+      <recent name="C:\Users\ami fidele\god\xyzshopping\xyzshopping" />
+      <recent name="C:\Users\ami fidele\God help projects\xyzshopping\accounts" />
+      <recent name="C:\Users\ami fidele\God help projects\xyzshopping\tickets\templates\tickets" />
+      <recent name="C:\Users\ami fidele\God help projects\xyzshopping\media" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.xyzshopping">
+    <configuration name="base" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="xyzshopping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/PycharmProjects/xyzshopping/venv/Lib/site-packages/django/db/backends/sqlite3" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$USER_HOME$/PycharmProjects/xyzshopping/venv/Lib/site-packages/django/db/backends/sqlite3/base.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="xyzshopping" type="Python.DjangoServer" factoryName="Django server">
+      <module name="xyzshopping" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="xyzshopping.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/xyzshopping" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.base" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ami fidele\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="596ff217-1078-4079-b3a0-dd054ff37d5d" name="Default Changelist" comment="" />
+      <created>1556785336518</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556785336518</updated>
+      <workItem from="1556785581583" duration="11096000" />
+      <workItem from="1556874086236" duration="591000" />
+      <workItem from="1556702179716" duration="9726000" />
+      <workItem from="1556724241629" duration="9833000" />
+      <workItem from="1556797824159" duration="12293000" />
+      <workItem from="1556852163306" duration="6048000" />
+      <workItem from="1556204056449" duration="53000" />
+      <workItem from="1557334034767" duration="10551000" />
+      <workItem from="1557393525245" duration="12255000" />
+      <workItem from="1557413781424" duration="26409000" />
+      <workItem from="1557477893539" duration="4948000" />
+      <workItem from="1557501439646" duration="1805000" />
+      <workItem from="1557564249635" duration="8574000" />
+      <workItem from="1557675185006" duration="1987000" />
+      <workItem from="1557712219197" duration="28424000" />
+      <workItem from="1557828559190" duration="6108000" />
+      <workItem from="1557846822860" duration="18107000" />
+      <workItem from="1558170077153" duration="8548000" />
+      <workItem from="1558971742860" duration="9047000" />
+      <workItem from="1559713559490" duration="2591000" />
+      <workItem from="1559742074674" duration="7217000" />
+      <workItem from="1559808783477" duration="814000" />
+      <workItem from="1559837013121" duration="8765000" />
+      <workItem from="1559886799033" duration="955000" />
+      <workItem from="1559889254474" duration="49000" />
+      <workItem from="1559897700339" duration="18000" />
+      <workItem from="1560002763687" duration="594000" />
+      <workItem from="1559407603689" duration="52000" />
+      <workItem from="1560013600893" duration="66000" />
+      <workItem from="1560155839122" duration="2777000" />
+      <workItem from="1560160980943" duration="3880000" />
+      <workItem from="1560166382007" duration="10807000" />
+      <workItem from="1560189177922" duration="1347000" />
+      <workItem from="1560233982864" duration="1640000" />
+      <workItem from="1560254276569" duration="104000" />
+      <workItem from="1560265565832" duration="1387000" />
+      <workItem from="1560435835164" duration="1014000" />
+      <workItem from="1560443731739" duration="6941000" />
+      <workItem from="1560489599218" duration="6428000" />
+      <workItem from="1560613251338" duration="8147000" />
+      <workItem from="1560752301398" duration="1025000" />
+      <workItem from="1560789437011" duration="4818000" />
+      <workItem from="1560836696353" duration="1318000" />
+      <workItem from="1560869908903" duration="10903000" />
+      <workItem from="1560922579322" duration="6666000" />
+      <workItem from="1560955394359" duration="474000" />
+      <workItem from="1560956358729" duration="7248000" />
+      <workItem from="1561014597205" duration="12531000" />
+      <workItem from="1561104721457" duration="2009000" />
+      <workItem from="1561206187832" duration="6037000" />
+      <workItem from="1561232907642" duration="589000" />
+      <workItem from="1561345941411" duration="4457000" />
+      <workItem from="1561388288688" duration="11310000" />
+      <workItem from="1561404202778" duration="3688000" />
+      <workItem from="1561440533744" duration="4772000" />
+      <workItem from="1561475683188" duration="7324000" />
+      <workItem from="1561546837058" duration="1271000" />
+      <workItem from="1561548575457" duration="1663000" />
+      <workItem from="1561557839724" duration="14224000" />
+      <workItem from="1561615968292" duration="159000" />
+      <workItem from="1561616353432" duration="904000" />
+      <workItem from="1561617764241" duration="9187000" />
+      <workItem from="1561648730814" duration="266000" />
+      <workItem from="1561653737528" duration="7481000" />
+      <workItem from="1561709817477" duration="4344000" />
+      <workItem from="1561823353926" duration="8519000" />
+      <workItem from="1561909281550" duration="1877000" />
+      <workItem from="1561974320289" duration="4788000" />
+      <workItem from="1562051864494" duration="1370000" />
+      <workItem from="1562062914596" duration="3303000" />
+      <workItem from="1562085153694" duration="4886000" />
+      <workItem from="1562132317197" duration="3982000" />
+      <workItem from="1562161008445" duration="901000" />
+      <workItem from="1562168255242" duration="13278000" />
+      <workItem from="1562245922439" duration="15582000" />
+      <workItem from="1562305183558" duration="263000" />
+      <workItem from="1562306389735" duration="10905000" />
+      <workItem from="1562435385306" duration="1933000" />
+      <workItem from="1562578649703" duration="1942000" />
+      <workItem from="1562604463706" duration="1019000" />
+      <workItem from="1562784845416" duration="2263000" />
+      <workItem from="1562837120545" duration="7241000" />
+      <workItem from="1562853076357" duration="182000" />
+      <workItem from="1562932517402" duration="11299000" />
+      <workItem from="1563009313548" duration="2653000" />
+      <workItem from="1563271143373" duration="12468000" />
+      <workItem from="1563354222001" duration="16488000" />
+      <workItem from="1563434620437" duration="6723000" />
+      <workItem from="1563452411483" duration="11109000" />
+      <workItem from="1563613190757" duration="2853000" />
+      <workItem from="1563617683804" duration="159000" />
+      <workItem from="1563617990901" duration="13157000" />
+      <workItem from="1563639967910" duration="3465000" />
+      <workItem from="1563699863970" duration="74000" />
+      <workItem from="1563879441831" duration="3274000" />
+      <workItem from="1563891447382" duration="13817000" />
+      <workItem from="1563954194475" duration="16409000" />
+      <workItem from="1564036510935" duration="4210000" />
+      <workItem from="1564060520137" duration="10668000" />
+      <workItem from="1564130693869" duration="1036000" />
+      <workItem from="1564135078029" duration="23574000" />
+      <workItem from="1564244286703" duration="2012000" />
+      <workItem from="1564306922493" duration="2248000" />
+      <workItem from="1564482776069" duration="1658000" />
+      <workItem from="1564558105627" duration="342000" />
+      <workItem from="1565080004896" duration="3143000" />
+      <workItem from="1565110658947" duration="344000" />
+      <workItem from="1565184087226" duration="603000" />
+      <workItem from="1565195908445" duration="74000" />
+      <workItem from="1565275903626" duration="5239000" />
+      <workItem from="1565294436585" duration="5722000" />
+      <workItem from="1565340626770" duration="21184000" />
+      <workItem from="1565381093296" duration="6378000" />
+      <workItem from="1565430597213" duration="86000" />
+      <workItem from="1565435518351" duration="12072000" />
+      <workItem from="1565548661038" duration="836000" />
+      <workItem from="1565622732667" duration="17625000" />
+      <workItem from="1565720742508" duration="1070000" />
+      <workItem from="1565794303678" duration="12186000" />
+      <workItem from="1565875616755" duration="91000" />
+      <workItem from="1565887256863" duration="2284000" />
+      <workItem from="1566056759662" duration="874000" />
+      <workItem from="1566138894624" duration="5241000" />
+      <workItem from="1566195001984" duration="26292000" />
+      <workItem from="1566312832579" duration="10865000" />
+      <workItem from="1566350225896" duration="10444000" />
+      <workItem from="1566375691851" duration="1342000" />
+      <workItem from="1566401483427" duration="10203000" />
+      <workItem from="1566453434221" duration="21207000" />
+      <workItem from="1566538135528" duration="14322000" />
+      <workItem from="1566635259325" duration="5134000" />
+      <workItem from="1566642119134" duration="17583000" />
+      <workItem from="1566741839454" duration="5399000" />
+      <workItem from="1566755886634" duration="569000" />
+      <workItem from="1566757929003" duration="766000" />
+      <workItem from="1566787550553" duration="5000" />
+      <workItem from="1566788163917" duration="11697000" />
+      <workItem from="1566831786620" duration="11595000" />
+      <workItem from="1566882921600" duration="9396000" />
+      <workItem from="1566920119081" duration="7178000" />
+      <workItem from="1566970105537" duration="2766000" />
+      <workItem from="1566984130555" duration="1211000" />
+      <workItem from="1567007887590" duration="79000" />
+      <workItem from="1567008613852" duration="28376000" />
+      <workItem from="1567096343002" duration="7033000" />
+      <workItem from="1567148928441" duration="7043000" />
+      <workItem from="1567181166319" duration="379000" />
+      <workItem from="1567267050313" duration="4894000" />
+      <workItem from="1567412247608" duration="4637000" />
+      <workItem from="1567420139800" duration="6900000" />
+      <workItem from="1567440963824" duration="2997000" />
+      <workItem from="1567524036975" duration="20355000" />
+      <workItem from="1567614624526" duration="4000" />
+      <workItem from="1567616665056" duration="3986000" />
+      <workItem from="1567673268359" duration="17576000" />
+      <workItem from="1567751639397" duration="7435000" />
+      <workItem from="1567864439518" duration="4370000" />
+      <workItem from="1568015548058" duration="1189000" />
+      <workItem from="1568022581436" duration="12177000" />
+      <workItem from="1568048219669" duration="405000" />
+      <workItem from="1568049685065" duration="6104000" />
+      <workItem from="1568115210987" duration="8160000" />
+      <workItem from="1568183500172" duration="11276000" />
+      <workItem from="1568203925406" duration="15937000" />
+      <workItem from="1568305836312" duration="4322000" />
+      <workItem from="1568339231386" duration="13932000" />
+      <workItem from="1568561576581" duration="740000" />
+      <workItem from="1568623168056" duration="1431000" />
+      <workItem from="1568624997327" duration="578000" />
+      <workItem from="1568630808758" duration="8287000" />
+      <workItem from="1568657080252" duration="1001000" />
+      <workItem from="1568702578283" duration="1939000" />
+      <workItem from="1568823244293" duration="4602000" />
+      <workItem from="1569171138621" duration="991000" />
+      <workItem from="1569174394140" duration="24000" />
+      <workItem from="1569255178195" duration="1443000" />
+      <workItem from="1569430344057" duration="201000" />
+      <workItem from="1569432103523" duration="3167000" />
+      <workItem from="1569603142560" duration="2421000" />
+      <workItem from="1569912218898" duration="1924000" />
+      <workItem from="1569920373183" duration="5101000" />
+      <workItem from="1570087379572" duration="2625000" />
+      <workItem from="1570432272509" duration="677000" />
+      <workItem from="1570437795710" duration="2472000" />
+      <workItem from="1570642342701" duration="1277000" />
+      <workItem from="1570772037902" duration="143000" />
+      <workItem from="1570887818718" duration="2000" />
+      <workItem from="1570889400899" duration="564000" />
+      <workItem from="1571338959607" duration="79000" />
+      <workItem from="1571846271457" duration="248000" />
+      <workItem from="1572458803205" duration="1941000" />
+      <workItem from="1572485391802" duration="2000" />
+      <workItem from="1572547497131" duration="586000" />
+      <workItem from="1572907986202" duration="19000" />
+      <workItem from="1572987528430" duration="5000" />
+      <workItem from="1574798198254" duration="271000" />
+      <workItem from="1575386612586" duration="287000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1118155000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" weight="0.27231467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="manage.py@xyzshopping" order="0" weight="0.6" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3296" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.048" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.7328" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.952" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.7008" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3296" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50680786" side_tool="true" weight="0.8848" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.6096" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49319214" weight="0.952" />
+      <window_info active="true" anchor="bottom" id="Concurrent Activities Diagram" order="14" visible="true" weight="0.6976" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27231467" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="manage.py@xyzshopping" order="0" weight="0.6" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.3296" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.048" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.7328" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.952" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.7008" />
+      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.3296" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50680786" side_tool="true" weight="0.8848" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.6096" />
+      <window_info anchor="bottom" id="Terminal" order="13" sideWeight="0.49319214" visible="true" weight="0.048" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" weight="0.6992" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/xyzshopping$base.coverage" NAME="base Coverage Results" MODIFIED="1561828662009" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$USER_HOME$/PycharmProjects/xyzshopping/venv/Lib/site-packages/django/db/backends/sqlite3" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/google757c35ca31fe6046.html" />
+    <entry file="file://$PROJECT_DIR$/sitemap.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/static/tickets/css/tablet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-21240" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="592">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/serializers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/help.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="70" column="43" selection-start-line="70" selection-start-column="43" selection-end-line="70" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xyzshopping/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3816">
+          <caret line="159" column="43" selection-start-line="159" selection-start-column="43" selection-end-line="159" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3936">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0002_auto_20190910_1351.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0003_included.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0004_auto_20190910_1412.py" />
+    <entry file="file://$PROJECT_DIR$/xyzshopping/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/About.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="39" column="73" selection-start-line="39" selection-start-column="73" selection-end-line="39" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0009_auto_20190911_1026.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0008_auto_20190911_1023.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0007_ticket_ticket_name_2.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0006_auto_20190911_0917.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0005_auto_20190911_0913.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0004_auto_20190911_0909.py" />
+    <entry file="file://$PROJECT_DIR$/tickets/migrations/0003_ticket_ticket_types.py" />
+    <entry file="file://$PROJECT_DIR$/accounts/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/ticket_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12">
+          <caret line="88" column="32" selection-start-line="88" selection-start-column="32" selection-end-line="88" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/static/tickets/css/desktop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="266" column="17" lean-forward="true" selection-start-line="266" selection-start-column="17" selection-end-line="266" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/event_details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/order_summary.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templatetags/cart_template_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/category_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="125" selection-start-line="33" selection-start-column="125" selection-end-line="33" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1065">
+          <caret line="36" column="125" selection-start-line="36" selection-start-column="125" selection-end-line="36" selection-end-column="125" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/wallet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/templates/accounts/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="33" column="120" selection-start-line="33" selection-start-column="120" selection-end-line="33" selection-end-column="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/stickers.png" />
+    <entry file="file://$PROJECT_DIR$/tickets/templates/tickets/event_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="93" column="22" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="128" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base_layout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/static/tickets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133584">
+          <caret line="5566" column="21" selection-start-line="5566" selection-start-column="21" selection-end-line="5566" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27504">
+          <caret line="1146" selection-start-line="1146" selection-end-line="1146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/accounts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="888">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/comming_soon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2088">
+          <caret line="87" column="58" selection-start-line="87" selection-start-column="58" selection-end-line="87" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tickets/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1944">
+          <caret line="99" column="31" selection-start-line="99" selection-start-column="31" selection-end-line="99" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/django/core/management/commands/runserver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

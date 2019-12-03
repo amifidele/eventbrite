@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load qr_tags %}
+
+{% block title %}Qr-Code Test{% endblock %}
+{% block body %}
+    <div>
+        {% qr_from_object object "size" %}
+        <img src="http://chart.apis.google.com/chart?cht=qr&chs={{ size }}x{{ size }}&chl={{ text }}" />
+    </div>
+{% endblock %}

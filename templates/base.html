@@ -1,0 +1,170 @@
+{% load staticfiles %}
+{% load cart_template_tags %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/style.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/mobile.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/tablet.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/desktop.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/fonts/_flaticon.css' %}">
+
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="{% static 'tickets/image/favicon.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'tickets/image/favicon.png' %}" type="image/x-icon">
+    <style>
+        .bg-team{
+            background-image: url({% static 'tickets/image/bg1.jpg' %});
+            background-size: cover;
+            height: 400px;
+            width: 100%;
+            padding-top: 7em;
+        }
+        h1, span{
+            font-family: 'Lato', sans-serif;
+        }
+        .bor-bot{
+            border-bottom: .2px solid white;
+        }
+        .bor-lef{
+            border-left: 1px solid white;
+        }
+        .bor-rig{
+            border-right: 1px solid grey;
+        }
+        .backgroun_img{
+            background-image: url("{% static 'tickets/image/homebackg.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .form-text{
+            display: none;
+        }
+        .bg{
+          background-image: url("{% static 'tickets/image/img (51).jpg' %}");
+          background-repeat: no-repeat;
+            background-size: cover;
+            height: 350px;
+        }
+
+    </style>
+</head>
+<body class="w-100 xs:w-100 md:w-100 overflow-x-hidden">
+<div class="w-100 bg-white z-9999 xs:hidden md:hidden shadow sticky">
+    <div class="w-90 mx-auto flex py-2">
+        <div class="w-20">
+           <img class="w-15 mx-2" src="{% static 'tickets/image/logo.png' %}"> <span class=" text-white"><a href="{% url 'home_view' %}" class="text-black no-underline text-2xl">Agatike </a></span>
+        </div>
+        <div class="w-25 mt-1">
+
+        </div>
+        <div class="w-55 text-right pr-4 xs:hidden">
+            <ul class="list inline-block text-white nav nav-pills">
+            <li class="text-base mx-4">
+                <a class="text-black" href="{% url 'tickets:list_view' %}">All tickets</a>
+            </li>
+            <li class="text-base  mx-4">
+                <a class="text-black" href="{% url 'tickets:create_ticket' %}">Create Ticket</a>
+            </li>
+            <li class="text-base  mx-4">
+                <a class="text-black" href="{% url 'tickets:main_help' %}">Help</a>
+            </li>
+            {% if user.is_authenticated %}
+            <li class="text-base  mx-4">
+                <a class="text-black no-underline" href="{% url 'tickets:order-summary' %}">
+                    Cart<span class="bg-orange px-2 py-1 rounded-full text-white">{{ request.user|cart_item_count }}</span></a>
+            </li>
+            <li class="nav-item dropdown mx-4 -mt-1">
+              <a class="dropdown-toggle rounded-circle text-black" href="#" id="navbardrop" data-toggle="dropdown">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+              </a>
+              <div class="dropdown-menu mt-3 mr-3">
+                    <a class=" dropdown-item " href="{% url 'profile' %}"><i class="ml-2 mx-2" data-feather="user"></i>{{ user.username }}</a>
+                    <a class=" dropdown-item" href="{% url 'logout' %}"> <i class="ml-2 mx-2" data-feather="log-out"></i>Logout</a>
+
+              </div>
+            </li>
+            {% else %}
+             <li class="text-base  mx-3">
+                <a class="text-black" href="{% url 'accounts:register' %}">Sign up</a>
+            </li>
+            {% endif %}
+{#                    {% if user.is_authenticated %}#}
+{#                        <li class="mx-4 text-base"><a class="text-white" href="{% url 'profile' %}">{{ user.username }}</a></li>#}
+{#                        <li class="mx-4 text-base"><a class="text-white" href="{% url 'logout' %}">Logout</a></li>#}
+{#                    {% else %}#}
+{#                        <li class="mx-4 text-base"><a class="text-white" href="{% url 'login' %}">Login</a></li>#}
+{#                        <li class="mx-4 text-base"><a class="text-white" href="{% url 'accounts:register' %}">Signup</a></li>#}
+{#                    {% endif %}#}
+        </ul>
+        </div>
+    </div>
+</div>
+{% if messages %}
+    {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show text-centered" role="alert">
+          {{ message }}
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+
+    {% endfor %}
+{% endif %}
+{% block body %}
+{% endblock %}
+<div class="b-0 w-100 xs:hidden bg-black-darker mt-24 z-50 relative">
+    <div class="w-80 mx-auto px-5 py-5">
+        <div class="border-top border-bottom border-white pt-2 pb-4 px-5 text-center">
+            <ul class="list inline-block text-white">
+                <li class="mx-3 text-lg"><a class="text-white text-lg" href="{% url 'blog' %}">Blog</a></li>
+                <li class="mx-3 text-lg"><a class="text-white text-lg" href="{% url 'tickets:main_help' %}">Help</a></li>
+                <li class="mx-3 text-lg"><a class="text-white text-lg" href="{% url 'about_us' %}">Team</a></li>
+                <li class="mx-3 text-lg"><a class="text-white text-lg">Cookies</a></li>
+                <li class="mx-3 text-lg"><a class="text-white text-lg" href="{% url 'about_us' %}">Services</a></li>
+                <li class="mx-3 text-lg"><a class="text-white text-lg">Developers</a></li>
+            </ul>
+        </div>
+    <div class="w-100 absolute pt-2 text-center">
+       <p class=" text-white">© 2019 </p>
+    </div>
+    </div>
+
+<script>
+      feather.replace()
+</script>
+<script>
+        $('#id_starting_date').datepicker({ uiLibrary: 'bootstrap4', iconsLibrary: 'materialicons' });
+</script>
+<script>
+        $('#id_ending_date').datepicker({ uiLibrary: 'bootstrap4', iconsLibrary: 'materialicons' });
+</script>
+
+ <script>
+        $('#id_starting_hour').timepicker({ uiLibrary: 'bootstrap4' });
+ </script>
+    <script>
+        $('#id_ending_hour').timepicker({ uiLibrary: 'bootstrap4' });
+ </script>
+
+
+
+</div>
+
+</body>
+</html>

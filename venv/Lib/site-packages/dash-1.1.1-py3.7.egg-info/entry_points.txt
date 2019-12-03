@@ -1,0 +1,6 @@
+[console_scripts]
+dash-generate-components = dash.development.component_generator:cli
+
+[pytest11]
+dash = dash.testing.plugin
+

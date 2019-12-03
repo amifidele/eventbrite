@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+mailgun3/__init__.py
+mailgun3/mailgun.py
+mailgun3.egg-info/PKG-INFO
+mailgun3.egg-info/SOURCES.txt
+mailgun3.egg-info/dependency_links.txt
+mailgun3.egg-info/requires.txt
+mailgun3.egg-info/top_level.txt

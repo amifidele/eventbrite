@@ -1,0 +1,68 @@
+/*
+  Flaticon icon font: Flaticon
+  Creation date: 27/03/2019 10:05
+  */
+
+@font-face {
+    font-family: "Flaticon";
+    font-style: normal;
+    font-weight: normal;
+    src: url("Flaticon.eot");
+    src: url("Flaticon.eot?#iefix") format("embedded-opentype"), url("Flaticon.woff") format("woff"), url("Flaticon.ttf") format("truetype"), url("Flaticon.svg#Flaticon") format("svg");
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    @font-face {
+        font-family: "Flaticon";
+        src: url("Flaticon.svg#Flaticon") format("svg");
+    }
+}
+
+.fi::before {
+    display: inline-block;
+    font-family: "Flaticon";
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-decoration: inherit;
+    text-rendering: optimizeLegibility;
+    text-transform: none;
+}
+
+.flaticon-supermarket:before { content: "\f100"; }
+.flaticon-chat:before { content: "\f101"; }
+.flaticon-speech-bubble:before { content: "\f102"; }
+.flaticon-chat-1:before { content: "\f103"; }
+.flaticon-shopping-cart:before { content: "\f104"; }
+.flaticon-phone-call:before { content: "\f105"; }
+.flaticon-up-chevron:before { content: "\f106"; }
+.flaticon-up-chevron-1:before { content: "\f107"; }
+.flaticon-mail:before { content: "\f108"; }
+.flaticon-right-chevron:before { content: "\f109"; }
+.flaticon-right-chevron-1:before { content: "\f10a"; }
+.flaticon-left-chevron:before { content: "\f10b"; }
+.flaticon-left-chevron-1:before { content: "\f118"; }
+.flaticon-error:before { content: "\f10c"; }
+.flaticon-close:before { content: "\f10d"; }
+.flaticon-close-1:before { content: "\f10e"; }
+.flaticon-close-2:before { content: "\f10f"; }
+.flaticon-placeholder-4:before { content: "\f110"; }
+.flaticon-placeholder-5:before { content: "\f111"; }
+.flaticon-placeholder-6:before { content: "\f112"; }
+.flaticon-placeholder-7:before { content: "\f113"; }
+.flaticon-placeholder-8:before { content: "\f114"; }
+.flaticon-reload:before { content: "\f115"; }
+.flaticon-reload-1:before { content: "\f116"; }
+.flaticon-light-bulb:before { content: "\f117"; }
+.flaticon-approve-circular-button:before { content: "\f119"; }
+.flaticon-down-arrow-in-a-circle:before { content: "\f11a"; }
+.flaticon-mode-circular-button:before { content: "\f11b"; }
+.flaticon-exclamation-sign-in-a-circle:before { content: "\f11c"; }
+.flaticon-snowflake:before { content: "\f11d"; }
+.flaticon-car-door-1:before { content: "\f11e"; }
+.flaticon-car-door-2:before { content: "\f11f"; }
+.flaticon-car-door-3:before { content: "\f120"; }
+.flaticon-gearbox:before { content: "\f121"; }

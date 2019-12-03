@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block title %}{{ tickets_detail.ticket_title }}{% endblock %}
+{% block body %}
+<div class="w-100 relative">
+    <div class="w-90 md:w-95 mx-auto xl:flex md:flex pt-4">
+        <div class="w-60 xs:w-100 bg-white xl:mx-1 ">
+            <div class="h-px-600 xs:h-px-300 md:h-px-500 shadow ">
+                <img class="clip-full" src="{{ tickets_detail.ticket_banner.url }}">
+            </div>
+        </div>
+        <div class="w-40 xs:w-100 text-white xl:mx-4 md:mx-3 xl:px-2">
+            <div class="text-black bg-white-smoke w-100 border mx-auto xl:px-5 md:px-2 py-3 xs:px-2 xs:w-80 w-35">
+                <h1 class="text-3xl xs:text-2xl md:text-2xl">{{ tickets_detail.ticket_title }}</h1>
+                <p class="text-sm line-height-small">by : {{ tickets_detail.organizer_name }}</p>
+                <p class="text-lg line-height-small xs:text-sm">location : {{ tickets_detail.location }}</p>
+{#                <span class="line-height-small "><a href="#">posted by {{ tickets_detail.seller_name }}</a></span>#}
+                <p class="text-lg line-height-small xs:text-sm">Category : <a href="{% url 'tickets:category' slug=tickets_detail.category.slug %}">{{ tickets_detail.category }}</a></p>
+                <p class="text-lg line-height-small xs:text-sm">price :{{ tickets_detail.currency }}</p>
+                <p class="text-lg line-height-small xs:text-sm">date : {{ tickets_detail.starting_date }}  - {{ tickets_detail.ending_date }}</p>
+                <p class="text-lg line-height-small xs:text-sm">Hour : {{ tickets_detail.starting_hour }} Up To {{ tickets_detail.ending_hour }}</p>
+
+{#                <form>#}
+{#                    {% csrf_token %}#}
+{#                    <button class="btn bg-orange text-white w-80 ml-4">proceed Checkout</button>#}
+{#                </form>#}
+                <div class="text-center">
+                    <a href="{{ tickets_detail.get_add_to_cart_url }}" class="btn bg-orange text-white w-50"><i class="fas fa-shopping-basket mx-2"></i>Buy Ticket</a>
+                </div>
+
+                <div class="w-60 mx-auto text-center flex mt-3 relative">
+                    <div class="w-30">
+
+                    </div>
+                    <div class="w-30">
+                        <i class="fi flaticon-share-1 text-3xl line-height-small"></i><p>Share</p>
+                    </div>
+                    <div class="w-30">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="w-90 mx-auto flex">
+        <div class="w-60 md:w-90 xs:w-90 text-left pt-4 xl:px-3 xs:px-1 bg-white  ">
+            <span class="text-xl xs:text-sm font-weight-bold">Description :</span>
+            <p class="text-xl-left">{{ tickets_detail.ticket_description }}</p>
+            {% if object.organizer_description %}
+            <span class="text-xl font-weight-bold xs:text-sm">Organizer Description :</span>
+            <div class="">
+                <p class="text-xl-left">{{ tickets_detail.organizer_description }}</p>
+            </div>
+            {% else %}
+                <span></span>
+            {% endif %}
+        </div>
+
+
+    </div>
+
+</div>
+    <div class="w-100 text-center mt-20 xs:mt-2">
+        <a href="{% url 'tickets:category' slug=tickets_detail.category.slug %}" class="btn bg-orange text-white text-center">View Related Tickets</a>
+    </div>
+{% endblock %}

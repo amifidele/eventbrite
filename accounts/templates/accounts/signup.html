@@ -1,0 +1,94 @@
+
+
+
+{% load staticfiles %}
+{% load socialaccount %}
+{% load crispy_forms_tags %}
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here - Agatike</title>
+    <link rel="icon" href="{% static 'tickets/image/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/style.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/desktop.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/mobile.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/tablet.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/fonts/_flaticon.css' %}">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+        .form-text{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-white-smoke">
+    <div class="w-100 shadow-sm bg-white flex mx-auto py-3 px-5 xs:hidden">
+        <div class="w-50 z-99">
+             <a href="{% url 'comming_soon' %}" class="text-2xl text-grey-darkest no-underline">
+                 <img class="w-5 xs:w-10 text-grey-darkest -mt-1 xs:mt-3 xs:absolute mx-2" src="{% static 'tickets/image/logo.png' %}">
+                 Agatike</a>
+        </div>
+        <div class="w-50 text-right z-99">
+            <ul class="list inline-block">
+            <li class="text-base mx-4">
+{#                <a class="text-black" href="{% url 'tickets:main_help' %}">Help</a>#}
+            </li>
+            <li class="text-base  mx-3">
+                <a class="text-black" href="{% url 'tickets:main_help' %}">Help</a>
+            </li>
+            <li class="text-base  mx-3">
+                <a class="text-black" href="{% url 'login' %}">Login</a>
+            </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="">
+        <div class="w-100 absolute z-99  mt-3">
+            <div class="relative rounded-xl mx-auto bg-white w-40 xs:w-90 xl:px-4 xs:px-3  text-grey-darkest shadow xl:px-5 py-2">
+                <p class="text-3xl text-center ">Sign Up</p>
+                <div class="text-center pb-4">
+                        <a class="btn bg-white-smoke border-solid border-1 border-grey text-black w-80 my-2" href="{% provider_login_url 'google' %}">
+                        <img class="w-10 mr-3" src="{% static 'tickets/image/google logo.png' %}">
+                        Sign Up with  google</a>
+                    </div>
+                <form class=""  method='post'>
+                {% csrf_token %}
+                {{ form.username|as_crispy_field }}
+                {{ form.email|as_crispy_field }}
+                <div class="form-row">
+                   <div class="form-group col-md-6 mb-0">
+                    {{ form.password1|as_crispy_field }}
+                  </div>
+                    <div class="form-group col-md-6 mb-0">
+                    {{ form.password2|as_crispy_field }}
+                  </div>
+                </div>
+
+                 <p>Already have an account ? <a class="underline" href="{% url 'login' %}">Sign In</a></p>
+                    <div class="text-center pb-4">
+                        <button class="btn text-centered bg-orange text-white w-50 my-2" type="submit">Register</button>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+
+
+    </div>
+<div class="w-100 py-2 absolute b-0 text-right px-3 mt-1">
+    <span class="text-white "></span>
+
+</div>
+</body>
+</html>

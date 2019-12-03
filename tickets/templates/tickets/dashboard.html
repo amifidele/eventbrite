@@ -1,0 +1,169 @@
+{% extends 'base_menu.html' %}
+{% block title %}Affiliate dashboard{% endblock %}
+{% block body %}
+<script type="text/javascript">
+$(document).ready(function(){
+var endpoint = '/api/data/'
+var defaultData = []
+var labels = [];
+$.ajax({
+    method: "GET",
+    url: endpoint,
+    success: function (data) {
+        labels = data.labels
+        defaultData = data.default
+        var ctx = document.getElementById('myChart')
+        var ctx2 = document.getElementById('myChart2')
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: '# tryin dashboard',
+                    data: defaultData,
+                    backgroundColor: [
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)',
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)',
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+
+            })
+        var myChart = new Chart(ctx2, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'My Tickets Bar Chart',
+                    data: defaultData,
+                    backgroundColor: [
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)',
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)',
+                        'rgba(251,129,34,0.8)',
+                        'rgba(17,17,17,0.8)'
+                    ],
+                    {#borderColor: [#}
+                    {#    'rgba(255, 99, 132, 1)',#}
+                    {#    'rgba(54, 162, 235, 1)',#}
+                    {#    'rgba(255, 206, 86, 1)',#}
+                    {#    'rgba(75, 192, 192, 1)',#}
+                    {#    'rgba(153, 102, 255, 1)',#}
+                    {#    'rgba(255, 159, 64, 1)'#}
+                    {#],#}
+                    borderWidth: 1,
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true,
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+
+            })
+
+    },
+
+    error: function (error_data) {
+        console.log("error")
+        console.log(error_data)
+    }
+})
+});
+
+    </script>
+
+    <div class="w-100 flex">
+        <div class="w-10 bg-white shadow-lg h-px-700 fixed">
+            <div class="">
+                 <ul class="list mt-10">
+                    <li class="py-4 text-center hover:text-white hover:bg-black">
+                        <i class="fas fa-chart-line hover:text-white text-4xl"></i>
+                    </li>
+                     <a class="hover:text-white hover:bg-black text-black" href="{% url 'tickets:create_ticket' %}">
+                     <li class="py-4 text-center hover:text-white hover:bg-black">
+                        <i class="fas fa-plus-square text-4xl"></i>
+                    </li>
+                     </a>
+                     <li class="py-4 text-center hover:text-white hover:bg-black">
+                        <i class="fas fa-chart-line hover:text-white text-4xl"></i>
+                    </li>
+                     <li class="py-4 text-center hover:text-white hover:bg-black">
+                        <i class="fas fa-cogs text-4xl"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="w-90 relative ml-32">
+            <div class="text-center py-4">
+                <h1 class="text-2xl">Welcome {{ user.username }},<br>Control Anything Anywhere!</h1>
+            </div>
+            <div class="row w-90 float-right py-4 ">
+                <div class="col-lg-2 mx-3 card bg-orange rounded text-white text-center border-grey border-1 border-solid ">
+                    <p class="text-xl">Tickets Viewers</p>
+                    <p class="text-2xl font-bold line-height-small">{{ tickets.available_tickets }}</p>
+                </div>
+                <div class="col-lg-2 mx-3 card bg-black-darker text-white text-center rounded border-grey border-1 border-solid ">
+                    <p class="text-xl">Sold Tickets</p>
+                    <p class="text-2xl font-bold line-height-small">901</p>
+                </div>
+                <div class="col-lg-2 mx-3 card bg-orange text-white text-center rounded border-grey border-1 border-solid">
+                    <p class="text-xl">Tickets in Store</p>
+                    <p class="text-2xl font-bold line-height-small">815</p>
+                </div>
+
+                    <div class="col-lg-2 mx-3 card  bg-black-darker text-center text-white rounded border-grey border-1 border-solid">
+                        <a class="text-white" href="{% url 'tickets:create_ticket' %}">
+                    <i class="fas fa-plus-square text-5xl mt-3"></i>
+                        </a>
+                    </div>
+
+
+            </div>
+            <div></div>
+            <div class="w-100 row mt-5">
+                <div class="col-lg-6 ">
+                 <canvas id="myChart" width="200" height="400"></canvas>
+                </div>
+
+            <div class="col-lg-6">
+                <canvas id="myChart2" width="200" height="400"></canvas>
+            </div>
+            </div>
+
+
+
+            </div>
+        </div>
+{% endblock %}

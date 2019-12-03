@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% block title %}order summary{% endblock %}
+{% block body %}
+    <div class="table-responsive w-80 mx-auto mt-5">
+    <h2>Ticket (s) Order Summary</h2>
+   <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Event Name</th>
+      <th scope="col">Price per unity</th>
+      <th scope="col">Quantity</th>
+      <th scope="col">Total</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for order_ticket in object.tickets.all %}
+    <tr>
+      <th scope="row">{{ forloop.counter }}</th>
+      <td>{{ order_ticket.tickets.ticket_title }}</td>
+      <td> Rwf</td>
+      <td><a href="{% url 'tickets:remove_single_ticket_cart' order_ticket.tickets.pk %}"><i class="fas fa-minus mr-2 text-black"></i></a>
+          {{ order_ticket.quantity }}
+          <a href="{% url 'tickets:add_cart' order_ticket.tickets.pk %}"><i class="fas fa-plus ml-2 text-black"></i></a></td>
+      <td>{{ order_ticket.get_total_ticket_price }} Rwf
+      <a href="{% url 'tickets:remove_cart' order_ticket.tickets.pk %}">
+            <i class="fas fa-trash mr-2 text-black float-right"></i>
+        </a>
+      </td>
+
+    </tr>
+      {% empty %}
+      <tr>
+      <td colspan="5" class="text-center"><p>Your  cart is empty try to add any ticket</p></td>
+      </tr>
+      <tr>
+      <td colspan="4" class="text-center"><a class="btn bg-orange text-white" href="{% url 'tickets:list_view' %}">Back To Shop</a></td>
+      </tr>
+  {% endfor %}
+    {% if object.get_total %}
+        <tr>
+        <td colspan="4"><b>Total Price</b></td>
+        <td colspan="4"><b>{{ object.get_total }} Rwf</b></td>
+        </tr>
+        <tr>
+            <td colspan="4"><a class="btn bg-orange w-40 text-white" href="{% url 'tickets:list_view' %}"><i class="fas fa-long-arrow-alt-left"></i> Continue Shopping</a></td>
+            <td colspan="4"><a class="btn bg-orange w-80 text-white" href="{% url 'tickets:checkout' %}"><i class="fas fa-money-bill"></i> Pay/CheckOut</a></td>
+        </tr>
+    {% endif %}
+
+  </tbody>
+</table>
+    </div>
+{% endblock %}

@@ -1,0 +1,3 @@
+[console_scripts]
+mtnmomo = mtnmomo.cli:main
+

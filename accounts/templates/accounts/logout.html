@@ -1,0 +1,67 @@
+{% load staticfiles %}
+{% load socialaccount %}
+{% load crispy_forms_tags %}
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agatike</title>
+    <link rel="icon" href="{% static 'tickets/image/favicon.png' %}" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/style.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/desktop.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/mobile.css' %}">
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/tablet.css' %}">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+     <link rel="stylesheet" type="text/css" href="{% static 'tickets/css/fonts/_flaticon.css' %}">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+        .form-text{
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-white-smoke">
+    <div class="w-100 shadow-sm bg-white flex mx-auto py-3 px-5 xs:hidden">
+        <div class="w-50 z-99">
+             <a href="{% url 'comming_soon' %}" class="text-2xl text-grey-darkest no-underline">
+                 <img class="w-5 xs:w-10 text-grey-darkest -mt-1 xs:mt-3 xs:absolute mx-2" src="{% static 'tickets/image/logo.png' %}">
+                 Agatike</a>
+        </div>
+        <div class="w-50 text-right z-99">
+            <ul class="list inline-block">
+            <li class="text-base mx-4">
+{#                <a class="text-black" href="{% url 'tickets:main_help' %}">Help</a>#}
+            </li>
+            <li class="text-base  mx-3">
+                <a class="text-black" href="{% url 'tickets:main_help' %}">Help</a>
+            </li>
+            <li class="text-base  mx-3">
+                <a class="text-black" href="{% url 'accounts:register' %}">Login</a>
+            </li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="">
+                <div class="w-100 z-99 py-5 mt-5">
+                    <div class="relative shadow-sm  py-4 mx-auto w-35 px-4 rounded-xl bg-white px-5 py-2">
+                        <p class="text-3xl text-center ">you're logged out!</p>
+                        <p class="text-center">here you can <a href="{% url 'login' %}">login</a> again</p>
+                    </div>
+                </div>
+            </div>
+
+<div class="w-100 py-2 absolute b-0 text-right px-3 mt-1">
+    <span class="text-white "></span>
+
+</div>
+</body>
+</html>

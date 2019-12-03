@@ -1,0 +1,22 @@
+{% extends 'base_layout.html' %}
+{% load static %}
+{% block title %}delete | {{ ticket.event_name }}{% endblock %}
+{% block body %}
+    <div class="w-60 mx-auto mt-16">
+        <div class="w-50 mx-auto p-2">
+            <div class="h-px-400">
+                <img class="clip-full" src="{{ ticket.event_banner.url }}">
+            </div>
+            <div class="bg-black-darker p-2 text-white">
+                <span>{{ ticket.event_name }}</span>
+                <p>{{ ticket.event_starting_date }} - {{ ticket.event_ending_date }}</p>
+                <form method="post">
+                    {% csrf_token %}
+                    <input class="btn-danger btn w-40 ml-4" type="submit" value="Confirm">
+                    <a class="w-40 btn bg-white border-1 border-accent" href="{% url 'tickets:list_view' %}">Cancel</a>
+                </form>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

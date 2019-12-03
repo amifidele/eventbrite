@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block title %}Create Ticket Here{% endblock %}
+{% block body %}
+    <div class="w-100 xs:w-100 md:w-100 mx-auto xl:p-2 xl:px-5 bg-white">
+     <div class="w-80 xs:w-100 md:w-90 mx-auto border border-orange xs:px-3 xl:p-5 md:p-3 bg-white-smoke xs:pt-3">
+         <h1 class="text-3xl xs:text-xl text-center">Create Your Ticket Here!</h1>
+     <form action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+         <div class="pt-2">
+             <h1 class="text-2xl bg-black-darker xl:w-40 xs:w-80 md:w-50 text-center text-white line-height-normal py-2">ticket Details</h1>
+         </div>
+     {{ form.ticket_title|as_crispy_field }}
+     {{ form.location|as_crispy_field }}
+
+     <div class="form-row">
+       <div class="form-group col-md-6 mb-0">
+        {{ form.starting_hour|as_crispy_field }}
+      </div>
+        <div class="form-group col-md-6 mb-0">
+        {{ form.starting_date|as_crispy_field }}
+      </div>
+
+     </div>
+     <div class="form-row">
+       <div class="form-group col-md-6 mb-0">
+        {{ form.ending_hour|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ form.ending_date|as_crispy_field }}
+      </div>
+     </div>
+      {{ form.ticket_banner|as_crispy_field }}
+      {{ form.ticket_description|as_crispy_field }}
+      {{ form.organizer_name|as_crispy_field }}
+      {{ form.organizer_description|as_crispy_field }}
+
+    {#     <div>#}
+    {#          <h1 class="text-2xl bg-black-darker w-40 text-center text-white line-height-normal py-2">Step Create Ticket</h1>#}
+    {#     </div>#}
+
+
+
+     <div class="form-row">
+         <div class="form-group col-md-6 mb-0">
+            {{ form.category|as_crispy_field }}
+         </div>
+         <div class="form-group col-md-6 mb-0">
+             {{ form.currency|as_crispy_field }}
+         </div>
+     </div>
+
+
+     <div class="">
+          <h1 class="text-2xl bg-black-darker w-40 md:w-50 xs:w-80 text-center text-white line-height-normal py-2">Set Tickets Price</h1>
+         <div class="form-row border-1 border-solid border-black py-2 px-2 rounded mt-5 ">
+
+         <div class="form-group col-md-4 mb-0">
+             {{ form.ticket_name_1|as_crispy_field }}
+         </div>
+          <div class="form-group col-md-4 mb-0">
+             {{ form.price_1|as_crispy_field }}
+         </div>
+             <div class="form-group col-md-2 mb-0">
+             {{ form.quantity_1|as_crispy_field }}
+         </div>
+         <div class="form-group col-md-2 mb-0">
+             {{ form.bonus_1|as_crispy_field }}
+         </div>
+        </div>
+         <div class="pt-2">
+             <p>NB : Fill The field below if Necessary</p>
+         </div>
+         <div class="form-row border-1 border-solid border-grey py-2 px-2 rounded mt-2">
+{#                 <div class="form-group col-md-2 mb-0">#}
+{#                     {{ form.ticket_type|as_crispy_field }}#}
+{#                 </div>#}
+                 <div class="form-group col-md-4 mb-0">
+                     {{ form.ticket_name_2|as_crispy_field }}
+                 </div>
+                  <div class="form-group col-md-4 mb-0">
+                     {{ form.price_2|as_crispy_field }}
+                 </div>
+                 <div class="form-group col-md-2 mb-0">
+                     {{ form.quantity_2|as_crispy_field }}
+                 </div>
+                 <div class="form-group col-md-2 mb-0">
+                 {{ form.bonus_2|as_crispy_field }}
+                 </div>
+        </div>
+     </div>
+
+         <div class="text-centered">
+             <button class="btn bg-orange w-40 xs:w-70 text-white my-3" type="submit">Make Your Ticket Live</button>
+         </div>
+
+    </form>
+     </div>
+
+    </div>
+{% endblock %}

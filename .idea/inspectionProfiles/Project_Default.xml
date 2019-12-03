@@ -1,0 +1,31 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="18">
+            <item index="0" class="java.lang.String" itemvalue="django-jet" />
+            <item index="1" class="java.lang.String" itemvalue="wrapt" />
+            <item index="2" class="java.lang.String" itemvalue="lxml" />
+            <item index="3" class="java.lang.String" itemvalue="pandas-datareader" />
+            <item index="4" class="java.lang.String" itemvalue="Werkzeug" />
+            <item index="5" class="java.lang.String" itemvalue="dash-html-components" />
+            <item index="6" class="java.lang.String" itemvalue="PyYAML" />
+            <item index="7" class="java.lang.String" itemvalue="dash-renderer" />
+            <item index="8" class="java.lang.String" itemvalue="plotly" />
+            <item index="9" class="java.lang.String" itemvalue="MarkupSafe" />
+            <item index="10" class="java.lang.String" itemvalue="Jinja2" />
+            <item index="11" class="java.lang.String" itemvalue="Flask-Compress" />
+            <item index="12" class="java.lang.String" itemvalue="dash-table" />
+            <item index="13" class="java.lang.String" itemvalue="retrying" />
+            <item index="14" class="java.lang.String" itemvalue="dash-core-components" />
+            <item index="15" class="java.lang.String" itemvalue="dash" />
+            <item index="16" class="java.lang.String" itemvalue="itsdangerous" />
+            <item index="17" class="java.lang.String" itemvalue="Flask" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

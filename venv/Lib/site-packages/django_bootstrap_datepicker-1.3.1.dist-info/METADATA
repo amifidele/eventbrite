@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: django-bootstrap-datepicker
+Version: 1.3.1
+Summary: Bootstrap 4 compatible datepicker for Django projects.
+Home-page: https://github.com/pbucher/django-bootstrap-datepicker
+Author: Paul Bucher
+Author-email: paulb@lctcb.org
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Requires-Dist: django (>=2.0)
+
+UNKNOWN
+
+

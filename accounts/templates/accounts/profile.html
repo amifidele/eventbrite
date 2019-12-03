@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %}user profile{% endblock %}
+{% block body %}
+     <div class="w-50 mx-auto">
+            <div class="w-90 mx-auto flex ">
+{#                <div class="w-30 h-px-200 p-2 bg-white">#}
+{#                    <img class="clip-full " src="{{ user.profile.image.url }}">#}
+{#                </div>#}
+                <div class="w-70">
+                    <h1>{{ user.username }}</h1>
+                </div>
+            </div>
+
+
+    </div>
+
+{% endblock %}

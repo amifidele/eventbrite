@@ -1,0 +1,71 @@
+{% load staticfiles i18n %}
+{% load bootstrap_calendar %}
+<!DOCTYPE html>
+<html lang="en" ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}{{ project_name }}{% endblock title %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    {% block css %}
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+
+    <!-- Your stuff: Third-party css libraries go here -->
+    {% bootstrap_calendar_css %}
+
+    <!-- This file store project specific CSS -->
+    {% endblock %}
+
+    {% block angular %}
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    {% endblock %}
+
+  </head>
+
+  <body>
+
+    <div class="header navbar">
+      <div class="container">
+        <a class="navbar-brand" href="/">{{cookiecutter.repo_name}}</a>
+        <ul class="nav navbar-nav">
+            <li class="active"><a href="/calendar/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+
+      {% block content %}
+      {% endblock content %}
+
+    </div> <!-- /container -->
+    
+    {% block modal %}{% endblock modal %}
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    {% block javascript %}
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+      <!-- Your stuff: Third-party javascript libraries go here -->
+
+      <!-- place project specific Javascript in this file -->
+      <script src="{% static 'js/underscore-min.js' %}"></script>
+      {% bootstrap_calendar_js language='pl-PL' %} 
+      {% bootstrap_calendar_init language='pl-PL' %}
+    {% endblock javascript %}
+  </body>
+</html>
