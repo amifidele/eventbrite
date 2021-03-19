@@ -22,7 +22,7 @@ django-hitcount==1.3.1
 django-multiselectfield==0.1.8
 django-mysql==3.2.0
 django-qrcode==0.3
-djangorestframework==3.10.2
+djangorestframework==3.11.2
 Flask==1.1.1
 Flask-Compress==1.4.0
 google-api-python-client==1.4.1
