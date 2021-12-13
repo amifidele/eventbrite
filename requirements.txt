@@ -32,7 +32,7 @@ idna==2.8
 itsdangerous==1.1.0
 Jinja2==2.10.1
 jsmin==2.2.2
-lxml==4.4.1
+lxml==4.6.5
 MarkupSafe==1.1.1
 mtnmomo==3.0.1
 numpy==1.17.0
