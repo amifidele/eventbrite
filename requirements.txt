@@ -41,7 +41,7 @@ oauthlib==3.0.1
 pandas==0.25.0
 pandas-datareader==0.7.4
 phonenumbers==8.10.10
-Pillow==6.2.0
+Pillow==9.0.0
 plotly==4.1.0
 psycopg2==2.8.3
 pyasn1==0.4.5
